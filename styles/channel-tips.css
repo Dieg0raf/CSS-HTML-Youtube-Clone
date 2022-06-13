@@ -1,0 +1,58 @@
+.channel-picture-column {
+    position: relative;
+    height: 40px;
+}
+
+.channel-picture-column:hover {
+    cursor: pointer;
+}
+
+.channel-tooltip {
+    position: absolute;
+    bottom: -88px;
+    background-color: white;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    width: 240px;
+    height: 60px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    padding-left: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 99;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.15s;
+}
+
+.channel-picture-column:hover .channel-tooltip {
+    opacity: 1;
+}
+
+.channel-tooltip img {
+    height: 50px;
+    border-radius: 25px;
+}
+
+.channel-picture-tip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.channel-pic-tip-author {
+    margin-top: 10px;
+}
+
+.channel-pic-tip-author {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.channel-pic-tip-stats {
+    font-size: 15px;
+    color: #606060;
+}
